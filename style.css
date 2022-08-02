@@ -1,0 +1,60 @@
+header {
+    font-family: Shrikhand;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px ;
+}
+
+.localisation{
+        font-size: 17px;
+        color: #353535;
+        display: flex;
+        justify-content: center;
+
+    }
+
+.fa-location-dot {
+    font-size: 19px;
+    padding-right: 10px;
+    color: #353535;
+
+}
+
+
+.expliquation{
+    font-size: 20px;
+    text-align: center;
+}
+
+.boutton{
+    padding: 3%;
+    border-radius: 35px;
+    border: none;
+    background: linear-gradient( #FF79DA, #9356DC );
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.imagevignettemain{
+    display: flex;
+    position: absolute;
+    object-fit: cover;
+    height: 173px;
+    width: 335px;
+}
+
+.vignettesRestaurant{
+    display: flex;
+    position: relative;
+}
+
+.restaurant{
+    display: flex;
+   
+    
+}
