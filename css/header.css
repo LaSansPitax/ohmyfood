@@ -1,0 +1,13 @@
+.ligne {
+    border-bottom: 4px solid #cfcfcf;
+}
+
+header {
+    margin-bottom: 12px;
+    margin: auto;
+    font-family: Shrikhand;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
