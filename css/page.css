@@ -51,9 +51,12 @@
    }
 
    .fa-heart{
-    
      font-size: 32px;
     }
+
+  .fa-heart:hover {
+    font-size: 32px;
+  }
 
     .groupeEntree{
     padding: 0 11.5px;
@@ -89,7 +92,7 @@
     }
 
 
-    .vignettes{
+    .vignettes1{
     box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
     background-color: white;
     display: flex;
@@ -97,6 +100,106 @@
     border-radius: 20px;
     padding: 1rem;
     margin: 16px 0;
+    animation: apparition .5s ;
+    }
+
+  .vignettes2 {
+  box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 16px 0;
+  animation: apparition .6s;
+  }
+
+  .vignettes3 {
+  box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 16px 0;
+  animation: apparition .7s;
+  }
+
+  .vignettes4 {
+  box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 16px 0;
+  animation: apparition .8s;
+  }
+
+  .vignettes5 {
+    box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 16px 0;
+    animation: apparition .9s;
+  }
+
+  .vignettes6 {
+  box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 16px 0;
+  animation: apparition 1s;
+  }
+
+  .vignettes7 {
+    box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 16px 0;
+    animation: apparition 1.1s;
+  }
+
+    .vignettes8 {
+      box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 20px;
+      padding: 1rem;
+      margin: 16px 0;
+      animation: apparition 1.2s;
+    }
+
+    .vignettes9 {
+    box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 16px 0;
+    animation: apparition 1.3s;
+    }
+
+    .vignettes10 {
+      box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 20px;
+      padding: 1rem;
+      margin: 16px 0;
+      animation: apparition 1.4s;
     }
 
     .plat_nom{
@@ -143,5 +246,16 @@
     white-space: nowrap;
      }
 
+
+     @keyframes apparition {
+      from{
+        transform: scale(0);
+      }
+
+      to{
+        transform: scale(1);
+
+      }
+     }
 
 
