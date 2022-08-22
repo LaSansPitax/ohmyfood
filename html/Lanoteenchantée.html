@@ -5,92 +5,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="https://kit.fontawesome.com/505aa112f8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <title>ohmyfood</title>
 </head>
 
 <body>
     <header>
-        <img src="images/logo/ohmyfood@2x.svg" alt="">
+
+        <div class="fleche">
+            <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+
+        <img class="logo_page" src="../images/logo/ohmyfood@2x.svg" alt="">
     </header>
 
-    <section>
-        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-        <h2> La note enchantée <i class="fa-thin fa-heart"></i></h2>
-        <div class="groupeEntree">
-            <h3>ENTRÉES</h3>
-            <div class="vignettes">
-                <h4>Ravioles de foie gras</h4>
-                <p>Accompagnés de leur crème à la truffe</p>
-                <p>25€</p>
-            </div>
-            <div class="vignettes">
-                <h4>Caviar osciètre</h4>
-                <p>Sur blini à la farine de blé noir</p>
-                <p>35€</p>
-            </div>
-            <div class="vignettes">
-                <h4>Homard et espuma de potiron</h4>
-                <p>Mariné aux zestes d'orange</p>
-                <p>20€</p>
-            </div>
-            <div class="vignettes">
-                <h4>Foie gras de canard cuit entier</h4>
-                <p>Confiture de figue et pain toasté</p>
-                <p>35€</p>
-            </div>
+    <div>
+        <img class="image_restaurants" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+    </div>
+
+    <section class="conteneur_menu">
+
+        <div class="Titre">
+            <h2 class="titre_restaurant"> La note enchantée </h2><i class="fa-regular fa-heart"></i>
+        </div>  
+
+        <div class="espace-titre">
+            <h3 class="sous-titre"><span class="sous-ligne">ENTR</span>ÉES</h3>
         </div>
 
-        <h3>PLATS</h3>
+        <div class="groupeEntree">
+            <div class="vignettes">
+                <div class="txt">
+                    <h4 class="plat_nom">Ravioles de foie gras</h4>
+                    <p class="composition">Accompagnés de leur crème à la truffe</p>
+                </div>
+                <span class="prix">25€</span>
+            </div>
+
+            <div class="vignettes">
+                <div class="txt">
+                    <h4 class="plat_nom">Caviar osciètre</h4>
+                    <p class="composition">Sur blini à la farine de blé noir</p>
+                </div>
+                <span class="prix">35€</span>
+            </div>
+
+            <div class="vignettes">
+                <div class="txt">
+                    <h4 class="plat_nom">Homard et espuma de potiron</h4>
+                    <p class="composition">Mariné aux zestes d'orange</p>
+                </div>
+                <span class="prix">20€</span>
+            </div>
+
+            <div class="vignettes">
+                <div class="txt">
+                    <h4 class="plat_nom">Foie gras de canard cuit entier</h4>
+                    <p class="composition">Confiture de figue et pain toasté</p>
+                </div>
+                <span class="prix">35€</span>
+            </div>
+
+        </div>
+
+        <div class="espace-titre">
+            <h3 class="sous-titre"><span class="sous-ligne">PLAT</span>S</h3>
+        </div>
         <div class="groupePlats">
             <div class="vignettes">
-                <h4>Noix de coquilles Saint-Jacquess</h4>
-                <p>Sur lit de purée de céleri-rave</p>
-                <p>40€</p>
+                <div class="txt">
+                    <h4 class="plat_nom">Noix de coquilles Saint-Jacques</h4>
+                    <p class="composition">Sur lit de purée de céleri-rave</p>
+                </div>
+                <span class="prix">40€</span>
             </div>
             <div class="vignettes">
-                <h4>Langoustine poêlée</h4>
-                <p>Purée de patate douce</p>
-                <p>35€</p>
+                <div class="txt">
+                    <h4 class="plat_nom">Langoustine poêlée</h4>
+                    <p class="composition">Purée de patate douce</p>
+                </div>
+                <span class="prix">35€</span>
             </div>
             <div class="vignettes">
-                <h4>Mijoté de queue de boeuf</h4>
-                <p>Et riz sauvage aux zestes de citron</p>
-                <p>44€</p>
-            </div>
-
-            <h3>DESSERT</h3>
-            <div class="groupeDesserts">
-                <div class="vignettes">
-                    <h4>Macaron noisette et chocolat</h4>
-                    <p>Glace au caramel brun et sel de Guérande</p>
-                    <p>18€</p>
+                <div class="txt">
+                    <h4 class="plat_nom">Mijoté de queue de boeuf</h4>
+                    <p class="composition">Et riz sauvage aux zestes de citron</p>
                 </div>
-                <div class="vignettes">
-                    <h4>Baba au rhum revisité</h4>
-                    <p>Avec son coulis de citron</p>
-                    <p>22€</p>
-                </div>
-                <div class="vignettes">
-                    <h4>Tarte au citron meringuée</h4>
-                    <p>Déstructurée</p>
-                    <p>23€</p>
-                </div>
+                <span class="prix">44€</span>
             </div>
         </div>
-        <span><a href="Commander"></a></span>
+
+        <div class="espace-titre">
+            <h3 class="sous-titre"><span class="sous-ligne">DESS</span>ERT</h3>
+        </div>
+
+        <div class="groupeDesserts">
+            <div class="vignettes">
+                <div class="txt">
+                    <h4 class="plat_nom">Macaron noisette et chocolat</h4>
+                    <p class="composition">Glace au caramel brun et sel de Guérande</p>
+                </div>
+                <span class="prix">18€</span>
+            </div>
+            <div class="vignettes">
+                <div class="txt">
+                    <h4 class="plat_nom">Baba au rhum revisité</h4>
+                    <p class="composition">Avec son coulis de citron</p>
+                </div>
+                <span class="prix">22€</span>
+            </div>
+            <div class="vignettes">
+                <div class="txt">
+                    <h4 class="plat_nom">Tarte au citron meringuée</h4>
+                    <p class="composition">Déstructurée</p>
+                </div>
+                <span class="prix">23€</span>
+            </div>
+        </div>
+        <div class="bas"><a class="boutton" href="">Commander</a></div>
+
     </section>
 
     <footer>
-        <div>
-            <img src="images/logo/ohmyfood@2x.svg" alt="">
-            <ul>
-                <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
-                <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
-                <li>Mention légale</li>
-                <li>Contact</li>
+        <div class="faq">
+            <span class="logofooter">Ohmyfood</span>
+            <ul class="listfooter">
+                <li class="LIfoot"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+                <li class="LIfoot"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+                <li class="LIfoot">Mentions légales</li>
+                <li class="LIfoot">Contact</li>
             </ul>
         </div>
     </footer>
