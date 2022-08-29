@@ -27,17 +27,6 @@ body{
     z-index: 1;
 }
 
-.plein{
-    transition: opacity .1s ;
-    z-index: 2;
-    -moz-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background: linear-gradient(#FF79DA, #9356DC) ;
-    opacity: 0;
-}
 
 .plein:hover {     
 opacity: 1;
@@ -220,12 +209,22 @@ ol{
 }
 
 
-
 .fa-heart{
     position: absolute;
     right: 33px;
     top: 190px;
     font-size: 22px;
+}
+
+.plein {
+    transition: opacity .1s;
+    z-index: 2;
+    background-clip: text;
+    background: linear-gradient(#FF79DA, #9356DC);
+    opacity: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
 }
 
 
