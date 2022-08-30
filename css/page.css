@@ -52,6 +52,26 @@ font-family: Shrikhand, "cursive";
 
 .fa-heart{
 font-size: 32px;
+position: absolute;
+right: 35px;
+}
+
+.plein {
+transition: opacity .1s;
+z-index: 2;
+background-clip: text;
+background: linear-gradient(#FF79DA, #9356DC);
+opacity: 0;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.plein:hover {     
+opacity: 1;
+}
+
+.vide {
+z-index: 1;
 }
 
 
@@ -98,6 +118,7 @@ justify-content: space-between;
 border-radius: 20px;
 padding: 1rem;
 margin: 16px 0;
+overflow: hidden;
 animation: apparition 0.5s ;
 }
 
@@ -243,6 +264,42 @@ text-overflow: ellipsis;
 overflow: hidden;
 white-space: nowrap;
 }
+
+.coulissement{
+background-color: #99e2d0;
+width: 64px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: -16px -160px -16px -16px;
+}
+
+
+.confirm{
+background-color: white;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: rotate(18deg);
+transition-duration: 10s;
+}
+
+.vignettes1:hover .coulissement{
+margin-right: -18px;
+}
+
+
+.vignettes1:hover .confirm{
+transform: rotate(0);
+}
+
+.fa-check{
+color: #99e2d0;
+}
+
 
 
 @keyframes apparition {
