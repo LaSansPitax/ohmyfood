@@ -78,20 +78,11 @@ z-index: 1;
 
 
 
-.groupeEntree{
+.groupe{
 padding: 0 11.5px;
 margin-top: 40px;
 }
 
-.groupePlats{
-padding: 0 11.5px;
-margin-top: 40px;
-}
-
-.groupeDesserts{
-padding: 0 11.5px;
-margin-top: 40px;
-}
 
 
 .sous-titre{
@@ -261,6 +252,8 @@ display: flex;
 align-items: flex-end;
 justify-content: flex-end;
 font-weight: 700;
+    overflow: hidden;
+        white-space: nowrap;
 }
 
 .boutton {
@@ -409,6 +402,12 @@ opacity: 100%;
 }
 }
 
+
+@media all and (min-width:1025px) and (max-width: 1200px) {
+
+}
+
+@media all and (min-width:481px) and (max-width: 768px) {}
 
 
 

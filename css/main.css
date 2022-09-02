@@ -46,9 +46,42 @@ opacity: 1;
     font-size: 15px;
     margin: 10px;
     border-radius: 20px;
+    
 }
 
-.num {
+.num1 {
+    display: flex;
+    color: white;
+    height: 24PX;
+    width: 24px;
+    background-color: #9356dc;
+    font-size: 15px;
+    position: absolute;
+    border-radius: 100px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    left: 37px;
+}
+
+.num2 {
+    display: flex;
+    color: white;
+    height: 24PX;
+    width: 24px;
+    background-color: #9356dc;
+    font-size: 15px;
+    position: absolute;
+    border-radius: 100px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    left: 37px;
+}
+
+.num3 {
     display: flex;
     color: white;
     height: 24PX;
@@ -160,7 +193,7 @@ ol{
 .imagevignettemain{
     display: flex;
     object-fit: cover;
-    height: 173px;
+    height: 165px;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -178,6 +211,10 @@ ol{
     border-radius: 20px ;
     margin-bottom: 25px;
 
+}
+
+.tuto_titre{
+    padding-left: 16px;
 }
 
 .titre_resto{
@@ -231,8 +268,18 @@ ol{
 
 
 
+@media all and (min-width:1025px) and (max-width: 1200px) {
+    .boutton {
+        padding: 1%;
+    }
+    
+ 
+
+}
 
 
 
 
+@media all and (min-width:481px) and (max-width: 768px) {
 
+}
