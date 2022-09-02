@@ -273,7 +273,25 @@ ol{
         padding: 1%;
     }
     
- 
+    ol{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .num1{
+        top: 32px;
+        left: 130px;
+    }
+
+    .num2 {
+        top: 32px;
+        left: 490px;
+    }
+
+    .num3 {
+        top: 32px;
+        left: 840px;
+    }
 
 }
 
