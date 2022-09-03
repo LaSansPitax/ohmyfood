@@ -78,9 +78,22 @@ z-index: 1;
 
 
 
-.groupe{
-padding: 0 11.5px;
-margin-top: 40px;
+.groupeEntree{
+    padding: 0 11.5px;
+    margin-top: 40px;
+    animation: apparition 0.5s;
+}
+
+.groupePlat {
+    padding: 0 11.5px;
+    margin-top: 40px;
+    animation: apparition 2s;
+}
+
+.groupeDessert {
+    padding: 0 11.5px;
+    margin-top: 40px;
+    animation: apparition 3.5s;
 }
 
 
@@ -103,7 +116,7 @@ padding-bottom: 10px;
 }
 
 
-.vignettes1{
+.vignettes{
 box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
 background-color: white;
 display: flex;
@@ -114,125 +127,9 @@ width: 95%;
 margin: 16px 0;
 overflow: hidden;
 text-overflow: ellipsis;
-animation: apparition 0.5s ;
+position: relative;
 }
 
-.vignettes2 {
-box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
-background-color: white;
-display: flex;
-justify-content: space-between;
-border-radius: 20px;
-padding: 1rem;
-margin: 16px 0;
-overflow: hidden;
-text-overflow: ellipsis;
-animation: apparition 0.8s;
-}
-
-.vignettes3 {
-box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
-background-color: white;
-display: flex;
-justify-content: space-between;
-border-radius: 20px;
-padding: 1rem;
-margin: 16px 0;
-overflow: hidden;
-text-overflow: ellipsis;
-animation: apparition 1s;
-}
-
-.vignettes4 {
-box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
-background-color: white;
-display: flex;
-justify-content: space-between;
-border-radius: 20px;
-padding: 1rem;
-margin: 16px 0;
-overflow: hidden;
-text-overflow: ellipsis;
-animation: apparition 1.3s;
-}
-
-.vignettes5 {
-box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
-background-color: white;
-display: flex;
-justify-content: space-between;
-border-radius: 20px;
-padding: 1rem;
-margin: 16px 0;
-text-overflow: ellipsis;
-overflow: hidden;
-animation: apparition 1.8s;
-}
-
-.vignettes6 {
-box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
-background-color: white;
-display: flex;
-justify-content: space-between;
-border-radius: 20px;
-padding: 1rem;
-margin: 16px 0;
-overflow: hidden;
-text-overflow: ellipsis;
-animation: apparition 2s ;
-}
-
-.vignettes7 {
-box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
-background-color: white;
-display: flex;
-justify-content: space-between;
-border-radius: 20px;
-padding: 1rem;
-margin: 16px 0;
-overflow: hidden;
-text-overflow: ellipsis;
-animation: apparition 2.3s;
-}
-
-.vignettes8 {
-box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
-background-color: white;
-display: flex;
-justify-content: space-between;
-border-radius: 20px;
-padding: 1rem;
-margin: 16px 0;
-overflow: hidden;
-text-overflow: ellipsis;
-animation: apparition 2.8s;
-}
-
-.vignettes9 {
-box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
-background-color: white;
-display: flex;
-justify-content: space-between;
-border-radius: 20px;
-padding: 1rem;
-margin: 16px 0;
-overflow: hidden;
-text-overflow: ellipsis;
-animation: apparition 3s;
-}
-
-.vignettes10 {
-box-shadow: 0px 10px 8px 6px rgba(224, 224, 224, 0.43);
-background-color: white;
-display: flex;
-justify-content: space-between;
-border-radius: 20px;
-padding: 1rem;
-margin: 16px 0;
-overflow: hidden;
-text-overflow: ellipsis;
-animation: apparition 3.3s;
-}
 
 .plat_nom{
 margin: 0;
@@ -253,10 +150,9 @@ display: flex;
 align-items: flex-end;
 justify-content: flex-end;
 font-weight: 700;  
-overflow: hidden;
-white-space: nowrap;
 padding-bottom: 15px;
 padding-right: 12px;
+transition-duration: .5s;
 }
 
 .boutton {
@@ -291,6 +187,9 @@ align-items: center;
 justify-content: center;
 transform: translateX(100px);
 transition-duration: .7s;
+position: absolute;
+right: 0;
+height: 68px;
 }
 
 .confirm{
@@ -305,87 +204,20 @@ transform: rotate(180deg);
 transition-duration: 1s;
 }
 
-.vignettes1:hover .coulissement{
+.vignettes:hover .coulissement{
 transform: translateX(0);
 }
 
-.vignettes1:hover .confirm {
-    transform: rotate(0);
+.vignettes:hover .prix {
+    margin-right: 60px;
 }
 
-.vignettes2:hover .coulissement {
-    transform: translateX(10px);
-}
-
-.vignettes2:hover .confirm {
+.vignettes:hover .confirm {
     transform: rotate(0);
 }
 
 
-.vignettes3:hover .coulissement {
-    transform: translateX(10px);
-}
 
-.vignettes3:hover .confirm {
-    transform: rotate(0);
-}
-
-.vignettes4:hover .coulissement {
-    transform: translateX(10px);
-}
-
-.vignettes4:hover .confirm {
-    transform: rotate(0);
-}
-
-.vignettes5:hover .coulissement {
-    transform: translateX(10px);
-}
-
-.vignettes5:hover .confirm {
-    transform: rotate(0);
-}
-
-.vignettes6:hover .coulissement {
-    transform: translateX(10px);
-}
-
-.vignettes6:hover .confirm {
-    transform: rotate(0);
-}
-
-.vignettes7:hover .coulissement {
-    transform: translateX(10px);
-}
-
-.vignettes7:hover .confirm {
-    transform: rotate(0);
-}
-
-.vignettes8:hover .coulissement {
-    transform: translateX(10px);
-}
-
-.vignettes8:hover .confirm {
-    transform: rotate(0);
-}
-
-
-.vignettes9:hover .coulissement {
-    transform: translateX(10px);
-}
-
-.vignettes9:hover .confirm {
-    transform: rotate(0);
-}
-
-.vignettes10:hover .coulissement {
-    transform: translateX(10px);
-}
-
-.vignettes10:hover .confirm {
-    transform: rotate(0);
-}
 
 .fa-check{
 color: #99e2d0;
@@ -406,11 +238,35 @@ opacity: 100%;
 }
 
 
-@media all and (min-width:1025px) and (max-width: 1200px) {
+@media all and (min-width:1025px)  {
+    
+    .groupeEntree{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
+    .groupePlat {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .groupeDessert {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .vignettes{
+        width: 31%;
+    }
+    
 }
 
-@media all and (min-width:481px) and (max-width: 768px) {}
 
 
 
