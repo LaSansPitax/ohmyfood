@@ -270,43 +270,48 @@ ol{
     top: 188px;
     right: 32px;
 }
-.spinner {
+
+.Loader{
+    background-color: white;
     z-index: 1;
     position: absolute;
     top: 50%;
-    right: 50%;
-    left: 50%;
+    left: 47%;
     bottom: 50%;
-    width: 80px;
-    height: 80px;
+    animation: loader .01s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+}
+
+
+.spinner {
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
-    background: radial-gradient(farthest-side, #99e2d0 94%, #0000) top/9px 9px no-repeat,
-        conic-gradient(#0000 30%, #99e2d0);
-    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
-    animation: spinner 1s  linear;
+    border: 14.1px solid;
+    border-color: #dbdcef;
+    border-right-color: #9356dc;
+    animation: rotation 1s infinite linear;
 }
 
-@keyframes spinner {
-    0% {
-        transform: rotate(0deg);
-        opacity: 1;
+@keyframes rotation {
+
+    from{
+        transform: rotate(0deg); 
     }
 
-    50% {
-    transform: rotate(360deg);
-    opacity: 0.5;
+    to {
+        transform: rotate(360deg);
     }
-    
-    
-    100% {
-        transform: rotate(720deg);
+}
+
+@keyframes loader {
+
+    to {
         opacity: 0;
+        z-index: -100;
     }
-
-   
 }
-
-
 
 
 
@@ -326,6 +331,7 @@ ol{
     }
 
     .Vignettesrestaurants{
+        
         width: 500px;
     }
 
