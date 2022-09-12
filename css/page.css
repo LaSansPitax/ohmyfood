@@ -15,7 +15,7 @@ color: #353535;;
 
 body{
 margin: 0%;
-font-family: Roboto
+font-family: 'Roboto', sans-serif;
 }
 
 .logo_page{
@@ -39,7 +39,7 @@ border-top-left-radius: 40px;
 background-color: #f6f6f6;
 }
 
-.Titre{
+.titre{
 padding: 16px 32px 0 16px;
 display: flex;
 align-items: center;
@@ -78,19 +78,19 @@ z-index: 1;
 
 
 
-.groupeEntree{
+.groupe_entree{
     padding: 0 11.5px;
     margin-top: 40px;
     animation: apparition 0.5s;
 }
 
-.groupePlat {
+.groupe_plat {
     padding: 0 11.5px;
     margin-top: 40px;
     animation: apparition 2s;
 }
 
-.groupeDessert {
+.groupe_dessert {
     padding: 0 11.5px;
     margin-top: 40px;
     animation: apparition 3.5s;
@@ -100,7 +100,7 @@ z-index: 1;
 
 .sous-titre{
 margin-top: 45px;
-font-family: roboto;
+font-family: 'Roboto', sans-serif;
 font-weight: 400;
 
 }
@@ -161,8 +161,14 @@ padding: 12px 24px;
 border-radius: 35px;
 border: none;
 background: linear-gradient(#FF79DA, #9356DC);
+box-shadow: 0px 10px 8px 6px rgba(173, 168, 168, 0.719);
 text-decoration: none;
 color: white;
+}
+
+.boutton:hover {
+    background: linear-gradient(#ff9ce3, #ae83e2);
+    box-shadow: 0px 10px 8px 6px rgba(126, 125, 125, 0.603);
 }
 
 .bas{
@@ -240,21 +246,21 @@ opacity: 100%;
 
 @media all and (min-width:1025px)  {
     
-    .groupeEntree{
+    .groupe_entree{
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
     }
 
-    .groupePlat {
+    .groupe_plat {
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
     }
 
-    .groupeDessert {
+    .groupe_dessert {
         display: flex;
         justify-content: space-around;
         align-items: center;
